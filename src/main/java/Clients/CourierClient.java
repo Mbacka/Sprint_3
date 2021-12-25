@@ -25,7 +25,7 @@ public class CourierClient extends RestAssuredClient {
                 .path("ok");
     }
 
-    @Step("Неудачное создание курьера")
+    @Step("Проверяем создание копии курьера")
     public String createConflict(Courier courier){
         return given()
                 .spec(getBaseSpec())

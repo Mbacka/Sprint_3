@@ -11,7 +11,7 @@ import static io.restassured.RestAssured.given;
 public class OrderClient extends RestAssuredClient {
     private static final String ORDER_PATH = "api/v1/orders/";
 
-    @Step("Создаем заказ")
+    @Step("Создаем заказов")
     public int orderCreate(Order order) {
         return given()
                 .spec(getBaseSpec())
